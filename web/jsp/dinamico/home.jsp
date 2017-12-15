@@ -6,150 +6,79 @@
 <script src="js/js1/easypiechart.js" type="text/javascript"></script>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<ol class="breadcrumb">
+        
+     
 <div class="col-lg-12">
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-teal panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de Antecedentes Policiales</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-blue panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de referencia policiales</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-orange panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">${objResumen.totdenperarma}</div>
-                            <div class="text-muted">Registro de armas perdidas</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-red panel-widget ">
-                        <div class="row no-padding"><em class="fa fa-xl fa fa-car color-red"></em>
-                            <div class="large">${objResumen.denasarobveh}</div>
-                            <div class="text-muted">Registro de vehiculos robados</div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.row-->
-            <div class="row">
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-teal panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">${objResumen.dendesapa}</div>
-                            <div class="text-muted">Registro de personas desaparecidas</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-blue panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">${objResumen.dentrata}</div>
-                            <div class="text-muted">Registro del delito de trata de personas y afines</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-orange panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de bienes culturales sustraidos</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-red panel-widget ">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de pasaportes sustraidos o perdidos</div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.row-->
-            <div class="row">
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-teal panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de documentos Oficiales sustraidos o perdidos</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-blue panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de vehículos, naves o aeronaves empleadas para la comision de ilícitos penales</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-orange panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de personas jurídicas utilizadas para la comisión de delitos</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-red panel-widget ">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de identidad balística</div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.row-->
-            <div class="row">
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-teal panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de identidad dactilar del delincuente</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-blue panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">null</div>
-                            <div class="text-muted">Registro de infractores a la Ley General de Transporte y Tránsito terrestre</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-                    <div class="panel panel-orange panel-widget border-right">
-                        <div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-                            <div class="large">${objResumen.detdenu}</div>
-                            <div class="text-muted">Registro de detenidos</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body easypiechart-panel">
-                            <h4>Denuncias por perdida de Armas</h4>
-                            <div class="easypiechart" id="easypiechart-blue" data-percent="50" ><span class="percent">${objResumen.totdenperarma}</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.row-->
+    <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Data Table Example</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Age</th>
+                  <th>Start date</th>
+                  <th>Salary</th>
+                  <th>Salary</th>
+                  <th>Salary</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Age</th>
+                  <th>Start date</th>
+                  <th>asasas</th>
+                    <th>dsdsdsd</th>
+                  <th>ererer</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>Tiger Nixon</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <td>61</td>
+                  <td>2011/04/25</td>
+                  <td>$320,800</td>
+                    <th>2323</th>
+                  <th>232323y</th>
+                </tr>
+                <tr>
+                  <td>Garrett Winters</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td>63</td>
+                  <td>2011/07/25</td>
+                  <td>$170,750</td>
+                  <td>$86,000</td>
+                  <td>$86,000</td>
+                </tr>
+                <tr>
+                  <td>Ashton Cox</td>
+                  <td>Junior Technical Author</td>
+                  <td>San Francisco</td>
+                  <td>66</td>
+                  <td>2009/01/12</td>
+                  <td>$86,000</td>
+                  <td>$86,000</td>
+                  <td>$86,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-    </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
 </div>
-
+ </ol>
 
 	
 
