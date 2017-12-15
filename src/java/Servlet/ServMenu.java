@@ -106,7 +106,7 @@ public class ServMenu extends HttpServlet {
 
     private void pagehome(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, Exception {
         
-        request.setAttribute("objResumen", LogicResumenRNSP.getInstance().getResumen());
+        //request.setAttribute("objResumen", LogicResumenRNSP.getInstance().getResumen());
         request.setAttribute("breadcrumb", "Principal");
         request.setAttribute("body", "home");
         forwar("template.jsp", request, response);
