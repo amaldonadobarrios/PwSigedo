@@ -40,11 +40,11 @@ public class ServMenu extends HttpServlet {
             case "pagehome":
                 this.pagehome(request, response);
                 break;
-            case "denap":
-                this.pagedenap(request, response);
+            case "login":
+                this.pagelogin(request, response);
                 break;
             default:
-                this.pagehome(request, response);
+                this.pagelogin(request, response);
                 break;
 
         }
@@ -117,5 +117,9 @@ public class ServMenu extends HttpServlet {
         request.setAttribute("breadcrumb", "Denuncias por Perdida de Armas");
         request.setAttribute("body", "denap");
         forwar("template.jsp", request, response);
+    }
+
+    private void pagelogin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+         forwar("jsp/dinamico/login.html", request, response);
     }
 }
