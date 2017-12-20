@@ -5,8 +5,7 @@
  */
 package Servlet;
 
-import Logica.LogicDenArma;
-import Logica.LogicResumenRNSP;
+
 import Logica.grilla.LogicgrillaDenArma;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -113,7 +112,7 @@ public class ServMenu extends HttpServlet {
     }
 
     private void pagedenap(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, Exception {
-        request.setAttribute("grilla",LogicgrillaDenArma.getInstance().construirGrillaBuscarCliente(LogicDenArma.getInstance().getArmaperdida("1630005")));
+       
         request.setAttribute("breadcrumb", "Denuncias por Perdida de Armas");
         request.setAttribute("body", "denap");
         forwar("template.jsp", request, response);
